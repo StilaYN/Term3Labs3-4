@@ -2,5 +2,5 @@
 
 public interface IImageLoader
 {
-    Pixel[,] Load(string path);
+    Image Load(string path);
 }
