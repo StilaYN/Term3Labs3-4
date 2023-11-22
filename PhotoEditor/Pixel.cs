@@ -1,6 +1,6 @@
 ﻿namespace PhotoEditor;
 
-public class Pixel
+public class Pixel:IPixel
 {
     public Pixel(byte red, byte green, byte blue, byte alpha)
     {
