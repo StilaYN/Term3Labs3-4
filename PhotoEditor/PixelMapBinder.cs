@@ -6,15 +6,15 @@ namespace PhotoEditor;
 
 public class PixelMapBinder:IPixelMapBinder
 {
-    public Pixel[,] Create(byte[] buffer, int width, int height)
+    public IPixel[,] Create(byte[] buffer, int width, int height)
     {
-        Pixel[,] pixels = new Pixel[height, width];
+        IPixel[,] pixels = new IPixel[height, width];
         Task task = CopyAsync(pixels, buffer, height);
         task.Wait();
         return pixels;
     }
 
-    private async Task CopyAsync(Pixel[,] pixels, byte[] buffer,  int height)
+    private async Task CopyAsync(IPixel[,] pixels, byte[] buffer,  int height)
     {
         int numberOfAsync = 5;
         int unitHeight = height / numberOfAsync;
@@ -25,7 +25,7 @@ public class PixelMapBinder:IPixelMapBinder
         }
     }
 
-    private void CopyPartOfPixels(Pixel[,] pixels, byte[] buffer, int startHeight, int endHeight)
+    private void CopyPartOfPixels(IPixel[,] pixels, byte[] buffer, int startHeight, int endHeight)
     {
         for (int i = startHeight; i < endHeight; i++)
         {
