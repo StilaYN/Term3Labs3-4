@@ -16,7 +16,7 @@ public class PixelMapBinder:IPixelMapBinder
 
     private async Task CopyAsync(IPixel[,] pixels, byte[] buffer,  int height)
     {
-        int numberOfAsync = 5;
+        int numberOfAsync = 10;
         int unitHeight = height / numberOfAsync;
         for (int i = 0; i < numberOfAsync; i++)
         {
