@@ -11,9 +11,9 @@ public class PixelMapLoader:IPixelMapLoader
         var bitmap = new BitmapImage(new Uri(path));
         var width = bitmap.PixelWidth;
         var height = bitmap.PixelHeight;
-        int stride = width * ((bitmap.Format.BitsPerPixel + 7) / 8);
+        int stride = (int)(width * ((bitmap.Format.BitsPerPixel) / 8));
         var buffer = new byte[stride * height];
-        bitmap.CopyPixels(buffer,stride,height);
+        bitmap.CopyPixels(buffer,stride,0);
         return (buffer,width,height);
     }   
 }   
