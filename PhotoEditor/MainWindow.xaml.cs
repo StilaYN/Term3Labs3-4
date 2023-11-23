@@ -24,5 +24,18 @@ namespace PhotoEditor
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            IImageLoader loader = new ImageLoader(new PixelMapLoader(), new PixelMapBinder());
+            Microsoft.Win32.OpenFileDialog openFileDialog = new Microsoft.Win32.OpenFileDialog();
+            openFileDialog.Filter = "Изображения|*.jpg;*.jpeg;*.png;*.bmp|Все файлы|*.*";
+
+            if (openFileDialog.ShowDialog() == true)
+            {
+                string imagePath = openFileDialog.FileName;
+                IImage image = loader.Load(imagePath);
+            }
+        }
     }
 }

@@ -19,7 +19,7 @@ public class ImageLoader:IImageLoader
         set => _mapBinder = value ?? throw new ArgumentNullException(nameof(value));
     }
 
-    ImageLoader(IPixelMapLoader pixelMapLoader, IPixelMapBinder mapBinder)
+    public ImageLoader(IPixelMapLoader pixelMapLoader, IPixelMapBinder mapBinder)
     {
         _pixelMapLoader = pixelMapLoader;
         _mapBinder = mapBinder;
