@@ -4,7 +4,7 @@ namespace PhotoEditor;
 
 public class Image:IImage
 {
-    IPixel[,] _pixels;
+    private IPixel[,] _pixels;
 
     public Image(IPixel[,] pixels)
     {
