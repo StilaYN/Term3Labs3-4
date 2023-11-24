@@ -1,0 +1,151 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Programming\\C#\\Семестр3\\Labs3PhotoEditor\\PhotoEditorTests\\PhotoEditorTests.csproj": {}
+  },
+  "projects": {
+    "C:\\Programming\\C#\\Семестр3\\Labs3PhotoEditor\\PhotoEditorTests\\PhotoEditorTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Programming\\C#\\Семестр3\\Labs3PhotoEditor\\PhotoEditorTests\\PhotoEditorTests.csproj",
+        "projectName": "PhotoEditorTests",
+        "projectPath": "C:\\Programming\\C#\\Семестр3\\Labs3PhotoEditor\\PhotoEditorTests\\PhotoEditorTests.csproj",
+        "packagesPath": "C:\\Users\\avdee\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\C#\\Семестр3\\Labs3PhotoEditor\\PhotoEditorTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\avdee\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0-windows7.0": {
+            "targetAlias": "net7.0-windows",
+            "projectReferences": {
+              "C:\\Programming\\C#\\Семестр3\\Labs3PhotoEditor\\PhotoEditor\\PhotoEditor.csproj": {
+                "projectPath": "C:\\Programming\\C#\\Семестр3\\Labs3PhotoEditor\\PhotoEditor\\PhotoEditor.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0-windows7.0": {
+          "targetAlias": "net7.0-windows",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.2.10, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.2.10, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.5.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\7.0.309\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Programming\\C#\\Семестр3\\Labs3PhotoEditor\\PhotoEditor\\PhotoEditor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Programming\\C#\\Семестр3\\Labs3PhotoEditor\\PhotoEditor\\PhotoEditor.csproj",
+        "projectName": "PhotoEditor",
+        "projectPath": "C:\\Programming\\C#\\Семестр3\\Labs3PhotoEditor\\PhotoEditor\\PhotoEditor.csproj",
+        "packagesPath": "C:\\Users\\avdee\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\C#\\Семестр3\\Labs3PhotoEditor\\PhotoEditor\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\avdee\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0-windows7.0": {
+            "targetAlias": "net7.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0-windows7.0": {
+          "targetAlias": "net7.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\7.0.309\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

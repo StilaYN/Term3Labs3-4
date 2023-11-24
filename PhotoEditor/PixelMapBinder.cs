@@ -20,12 +20,12 @@ public class PixelMapBinder:IPixelMapBinder
         int unitHeight = height / numberOfAsync;
         for (int i = 0; i < numberOfAsync; i++)
         {
-            if(i!=numberOfAsync-1) await Task.Run(() => CopyPartOfPixels(pixels,buffer,i*unitHeight,(i+1)*unitHeight));
-            else await Task.Run(() => CopyPartOfPixels(pixels, buffer, i * unitHeight, height));
+            if(i!=numberOfAsync-1) await CopyPartOfPixels(pixels,buffer,i*unitHeight,(i+1)*unitHeight);
+            else await CopyPartOfPixels(pixels, buffer, i * unitHeight, height);
         }
     }
 
-    private void CopyPartOfPixels(IPixel[,] pixels, byte[] buffer, int startHeight, int endHeight)
+    private async Task CopyPartOfPixels(IPixel[,] pixels, byte[] buffer, int startHeight, int endHeight)
     {
         for (int i = startHeight; i < endHeight; i++)
         {

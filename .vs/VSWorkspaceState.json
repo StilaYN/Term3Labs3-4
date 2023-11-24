@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\PhotoEditor",
+    "\\PhotoEditorTests"
   ],
+  "SelectedNode": "\\PhotoEditor\\IPixelMapSeparator.cs",
   "PreviewInSolutionExplorer": false
 }
