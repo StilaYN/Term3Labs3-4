@@ -22,6 +22,6 @@ public class Image:IImage
         set => _pixels = value ?? throw new ArgumentNullException(nameof(value));
     }
 
-    public int Width => _pixels.GetLength(1);
-    public int Height => _pixels.GetLength(0);
+    public int Width => _pixels.GetLength(0);
+    public int Height => _pixels.GetLength(1);
 }
