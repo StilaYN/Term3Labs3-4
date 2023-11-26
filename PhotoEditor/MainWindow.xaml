@@ -7,7 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Center" Margin="0,178,0,0" VerticalAlignment="Top" Height="68" Width="188" Click="Button_Click"/>
+        <Button Content="Load Image" HorizontalAlignment="Left" Margin="560,119,0,0" VerticalAlignment="Top" Height="68" Width="188" Click="LoadButton_Click"/>
+        <Image x:Name="ImageArea" HorizontalAlignment="Left" Height="426" VerticalAlignment="Top" Width="351"/>
+        <Button Content="Sepia" HorizontalAlignment="Left" Margin="560,217,0,0" VerticalAlignment="Top" Height="68" Width="188" Click="SepiaButton_Click"/>
+        <Button Content="Save Image" HorizontalAlignment="Left" Margin="560,333,0,0" VerticalAlignment="Top" Height="68" Width="188" Click="SaveButton_Click"/>
+        <Button Content="Rotate 45 Image" HorizontalAlignment="Left" Margin="560,10,0,0" VerticalAlignment="Top" Height="68" Width="188" Click="RotateButton_Click"/>
 
     </Grid>
 </Window>
