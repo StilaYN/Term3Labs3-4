@@ -11,6 +11,11 @@ public class Image:IImage
         this._pixels = pixels;
     }
 
+    public Image(int widght,int height)
+    {
+        _pixels=new Pixel[widght,height];
+    }
+
     public IPixel[,] Pixels
     {
         get => _pixels;
