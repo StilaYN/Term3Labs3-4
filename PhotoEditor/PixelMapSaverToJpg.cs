@@ -11,10 +11,9 @@ public class PixelMapSaverToJpg:IPixelMapSaveToFile
         using (FileStream fstream = new FileStream(path, FileMode.Create))
         {
             JpegBitmapEncoder encoder = new JpegBitmapEncoder();
-            encoder.FlipHorizontal = true;
+            encoder.FlipHorizontal = false;
             encoder.FlipVertical = false;
             encoder.QualityLevel = 30;
-            encoder.Rotation = Rotation.Rotate90;
             encoder.Frames.Add(BitmapFrame.Create(image));
             encoder.Save(fstream);
         }
