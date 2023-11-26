@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PhotoEditor.Filters;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Emit;
@@ -22,12 +23,14 @@ namespace PhotoEditor
         IImageLoader loader;
         IImageSaver saver;
         IConvertImageToBitmapSource converter;
+        Layer mainLayer;
         public MainWindow()
         {
             InitializeComponent();
             loader = new ImageLoader(new PixelMapLoader(), new PixelMapBinder());
             saver=new ImageSaver(new PixelMapSeparator(), new PixelMapUploader(),new PixelMapSaverToJpg());
             converter=new ConvertImageToBitmapSource(new PixelMapSeparator(),new PixelMapUploader());
+            mainLayer = new Layer();
 
         }
         private void LoadButton_Click(object sender, RoutedEventArgs e)
@@ -40,22 +43,38 @@ namespace PhotoEditor
             {
                 string imagePath = openFileDialog.FileName;
                 IImage image = loader.Load(imagePath);
+                mainLayer.Image = image;
+                ImageArea.Source = converter.ToBitmapSource(mainLayer.Image, 300, 300);
             }
         }
 
         private void RotateButton_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
         private void SepiaButton_Click(object sender, RoutedEventArgs e)
         {
-
+            try
+            {
+                mainLayer.ApplyFilter(new SepianFilter());
+                ImageArea.Source = converter.ToBitmapSource(mainLayer.Image, 300, 300);
+            }catch(Exception)
+            {
+                MessageBox.Show("Изображение пустое!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-
+            try
+            {
+                saver.Save(mainLayer.Image, 300, 300, "result.jpg");
+            }catch(Exception)
+            {
+                MessageBox.Show("Изображение пустое!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+           
         }
     }
 }
