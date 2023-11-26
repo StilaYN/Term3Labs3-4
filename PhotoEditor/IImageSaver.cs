@@ -2,5 +2,5 @@
 
 public interface IImageSaver
 {
-    void Save(IImage image, string path);
+    void Save(IImage image, int dpiX, int dpiY, string path);
 }
