@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace PhotoEditor.MainLogic
 {
-    internal interface IImageProcessor
+    public interface IImageProcessor
     {
+        public List<ILayer> layers { get;}
+        public Layer CurretLayer { get; set; }
+        public void AddLayer(string newLayerName);
+        public void RemoveLayer(string layerName);
     }
 }
