@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\nikit\Desktop\PhotoEditor\Term3Labs3-4\PhotoEditor\obj\Debug\net7.0-windows\
+C:\Programming\C++\Labs3PhotoEditor\Labs3PhotoEditor\PhotoEditor\obj\Debug\net7.0-windows\
 PhotoEditor
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-C:\Users\nikit\Desktop\PhotoEditor\Term3Labs3-4\PhotoEditor\App.xaml
-11407045341
+C:\Programming\C++\Labs3PhotoEditor\Labs3PhotoEditor\PhotoEditor\App.xaml
+41086000106
 
-25-827011983
-1981827736222
-MainWindow.xaml;
+60157255267
+198-1955488161
+EnterNameWindow.xaml;EnterWindow.xaml;MainWindow.xaml;SaveWindow.xaml;
 
-False
+True
 

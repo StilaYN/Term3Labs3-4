@@ -14,7 +14,7 @@ public class ImageSaver:IImageSaver
         this.Saver = saver;
     }
 
-    public void Save(IImage image, int dpiX, int dpiY, string path)
+    public void Save(IImage image, float dpiX, float dpiY, string path)
     {
         (byte[] date, int width, int height, int bytePerPixel) = Separator.Separate(image.Pixels);
         BitmapSource source =Uploader.Upload(date, width, height, dpiX, dpiY);

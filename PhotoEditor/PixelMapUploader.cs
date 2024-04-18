@@ -7,7 +7,7 @@ namespace PhotoEditor;
 
 public class PixelMapUploader:IPixelMapUploader
 {
-    public BitmapSource Upload(byte[] date, int width, int height, int dpiX, int dpiY)
+    public BitmapSource Upload(byte[] date, int width, int height, float dpiX, float dpiY)
     {
         List<System.Windows.Media.Color> colors = new List<System.Windows.Media.Color>();
         colors.Add(System.Windows.Media.Colors.Red);

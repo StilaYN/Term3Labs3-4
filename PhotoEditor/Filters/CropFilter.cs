@@ -2,7 +2,7 @@
 
 namespace PhotoEditor.Filters;
 
-public class CropFilter
+public class CropFilter:IFilter
 {
     public int StartX { get; set; }
     public int StartY { get; set; }

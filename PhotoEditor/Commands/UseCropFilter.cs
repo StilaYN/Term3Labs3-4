@@ -5,10 +5,10 @@ namespace PhotoEditor.Commands;
 
 public class UseCropFilter:IProgramCommand
 {
-    private CropFilter _filter;
+    private IFilter _filter;
     private ILayer _layer;
     private IImage? _oldImage;
-    public UseCropFilter(CropFilter filter, ILayer layer)
+    public UseCropFilter(IFilter filter, ILayer layer)
     {
         _filter = filter;
         _layer = layer;

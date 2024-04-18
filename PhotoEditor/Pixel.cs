@@ -1,7 +1,16 @@
-﻿namespace PhotoEditor;
+﻿using PhotoEditor.Commands;
 
-public class Pixel:IPixel
+namespace PhotoEditor;
+
+public struct Pixel:IPixel
 {
+    public Pixel()
+    {
+        Red = 0;
+        Green = 0;
+        Blue = 0;
+        Alpha = 0;
+    }
     public Pixel(byte red, byte green, byte blue, byte alpha)
     {
         Red = red;

@@ -3,16 +3,16 @@
 namespace PhotoEditor.Filters
 {
 
-    public class SepiaFilter: IFilter
+    public class SepiaFilter: IColorFilter
     {
-        public IImage ApplyFiler(IImage image) { 
+        public IImage ApplyFilter(IImage? image) { 
             IImage result = new Image(image.Width, image.Height);
 
             for (int y = 0; y < image.Height; y++)
             {
                 for (int x = 0; x < image.Width; x++)
                 {
-                    IPixel originalPixel = image.Pixels[x, y];
+                    IPixel originalPixel = image.Pixels[y, x];
 
                     // Вычисление новых значений цветов для сепии
                     byte sepiaRed = (byte)(0.393 * originalPixel.Red + 0.769 * originalPixel.Green + 0.189 * originalPixel.Blue);
@@ -32,7 +32,7 @@ namespace PhotoEditor.Filters
                         originalPixel.Alpha
                     );
 
-                    result.Pixels[x, y] = sepiaPixel;
+                    result.Pixels[y, x] = sepiaPixel;
                 }
             }
             return result;

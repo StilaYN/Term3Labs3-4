@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tIBds+cDpWypRUCUu4+ewpVXQVCRsSI4E0WMlV+I/oEYWgX1Sq579Do0DZc2DBKgmOsHSbP+EkbJfcaTH06pvw==",
+  "dgSpecHash": "XNyzyqjL755AP0uKxoBxTfdkPiGHiY/FpXZeOoK7B+o3NZri7aqqJF22BOnwUXAbR+cp1aRSfhyqa7YAasj2hw==",
   "success": true,
-  "projectFilePath": "C:\\Programming\\C#\\Семестр3\\Labs3PhotoEditor\\PhotoEditorTests\\PhotoEditorTests.csproj",
+  "projectFilePath": "C:\\Programming\\Labs3PhotoEditor\\Labs3PhotoEditor\\PhotoEditorTests\\PhotoEditorTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\avdee\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\avdee\\.nuget\\packages\\microsoft.codecoverage\\17.5.0\\microsoft.codecoverage.17.5.0.nupkg.sha512",

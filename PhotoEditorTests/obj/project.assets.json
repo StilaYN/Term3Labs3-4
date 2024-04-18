@@ -2328,11 +2328,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Programming\\C#\\Семестр3\\Labs3PhotoEditor\\PhotoEditorTests\\PhotoEditorTests.csproj",
+      "projectUniqueName": "C:\\Programming\\Labs3PhotoEditor\\Labs3PhotoEditor\\PhotoEditorTests\\PhotoEditorTests.csproj",
       "projectName": "PhotoEditorTests",
-      "projectPath": "C:\\Programming\\C#\\Семестр3\\Labs3PhotoEditor\\PhotoEditorTests\\PhotoEditorTests.csproj",
+      "projectPath": "C:\\Programming\\Labs3PhotoEditor\\Labs3PhotoEditor\\PhotoEditorTests\\PhotoEditorTests.csproj",
       "packagesPath": "C:\\Users\\avdee\\.nuget\\packages\\",
-      "outputPath": "C:\\Programming\\C#\\Семестр3\\Labs3PhotoEditor\\PhotoEditorTests\\obj\\",
+      "outputPath": "C:\\Programming\\Labs3PhotoEditor\\Labs3PhotoEditor\\PhotoEditorTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2353,8 +2353,8 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "C:\\Programming\\C#\\Семестр3\\Labs3PhotoEditor\\PhotoEditor\\PhotoEditor.csproj": {
-              "projectPath": "C:\\Programming\\C#\\Семестр3\\Labs3PhotoEditor\\PhotoEditor\\PhotoEditor.csproj"
+            "C:\\Programming\\Labs3PhotoEditor\\Labs3PhotoEditor\\PhotoEditor\\PhotoEditor.csproj": {
+              "projectPath": "C:\\Programming\\Labs3PhotoEditor\\Labs3PhotoEditor\\PhotoEditor\\PhotoEditor.csproj"
             }
           }
         }
@@ -2402,7 +2402,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\7.0.309\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

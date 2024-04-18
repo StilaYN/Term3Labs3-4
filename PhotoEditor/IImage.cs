@@ -1,6 +1,8 @@
-﻿namespace PhotoEditor;
+﻿using System;
 
-public interface IImage
+namespace PhotoEditor;
+
+public interface IImage:ICloneable
 {
     IPixel[,] Pixels { get; set; }
     int Width { get;}

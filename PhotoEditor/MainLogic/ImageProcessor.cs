@@ -129,5 +129,4 @@ public class ImageProcessor:IImageProcessor
     {
         OnPropertyChanged(e.PropertyName);
     }
-
 }

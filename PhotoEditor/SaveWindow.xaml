@@ -5,13 +5,103 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PhotoEditor" xmlns:modelview="clr-namespace:PhotoEditor.ModelView" d:DataContext="{d:DesignInstance Type=modelview:SaveWindowMV}"
         mc:Ignorable="d"
-        Title="SaveWindow" Height="150" Width="250">
+        Title="Сохранить" Height="200" Width="160" ResizeMode="NoResize" Icon="/saveicon.png">
+
+    <Window.Resources>
+        <Style x:Key="BlueTextBoxStyle" TargetType="TextBox">
+            <Setter Property="Background" Value="#E3F2FD"/>
+            <!-- Фоновый цвет (светло-синий) -->
+            <Setter Property="Foreground" Value="#2196F3"/>
+            <!-- Синий цвет текста -->
+            <Setter Property="BorderBrush" Value="#1976D2"/>
+            <!-- Темно-синий контур -->
+            <Setter Property="BorderThickness" Value="1"/>
+            <!-- Толщина контура -->
+            <Setter Property="FontSize" Value="14"/>
+            <!-- Размер шрифта -->
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <!-- Шрифт -->
+
+            <!-- Отступы внутри текстового поля -->
+            <Style.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3" />
+                </Style>
+            </Style.Resources>
+        </Style>
+
+        <Style x:Key="BlueTextBlockStyle" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#2196F3"/>
+            <!-- Синий цвет текста -->
+            <Setter Property="FontWeight" Value="Normal"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <!-- Обычный шрифт -->
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <!-- Размер шрифта -->
+            <Setter Property="Margin" Value="5"/>
+            <!-- Отступы -->
+        </Style>
+
+        <Style x:Key="BlueButtonStyle" TargetType="Button">
+
+            <Setter Property="Background" Value="#2196F3"/>
+            <!-- Синий фон -->
+            <Setter Property="Foreground" Value="White"/>
+            <!-- Белый текст -->
+            <Setter Property="BorderBrush" Value="#1976D2"/>
+            <!-- Темно-синий контур -->
+            <Setter Property="BorderThickness" Value="0"/>
+
+            <!-- Толщина контура -->
+            <Setter Property="Padding" Value="15 10"/>
+            <!-- Закругленные углы -->
+            <Setter Property="Cursor" Value="Hand"/>
+            <!-- Курсор при наведении -->
+            <Setter Property="FontWeight" Value="Bold"/>
+            <!-- Жирный текст -->
+            <Setter Property="FontSize" Value="14"/>
+            <!-- Размер шрифта -->
+            <Setter Property="Effect">
+
+                <Setter.Value>
+                    <DropShadowEffect Color="#33300000" Direction="320" ShadowDepth="5" Opacity="0.5"/>
+                    <!-- Тень -->
+                </Setter.Value>
+            </Setter>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border BorderThickness="0"
+                        Background="{TemplateBinding Background}"
+                        CornerRadius="15">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#1976D2"/>
+                    <!-- Темно-синий фон при наведении -->
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#0D47A1"/>
+                    <!-- Глубокий синий фон при нажатии -->
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+    </Window.Resources>
+
     <Grid>
-        <TextBox HorizontalAlignment="Left" Margin="10,27,0,0" TextWrapping="Wrap" Text="{Binding DpiX}" VerticalAlignment="Top" Width="120"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,6,0,0" TextWrapping="Wrap" Text="Разрешение по X " VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,50,0,0" TextWrapping="Wrap" Text="Разрешение по Y" VerticalAlignment="Top"/>
-        <Button Content="Сохранить" Command="{Binding SaveCommand}" HorizontalAlignment="Left" Margin="163,40,0,0" VerticalAlignment="Top" Height="36" Width="67"/>
-        <TextBox HorizontalAlignment="Left" Margin="10,71,0,0" TextWrapping="Wrap" Text="{Binding DpiY}" VerticalAlignment="Top" Width="120"/>
+        <TextBox Style="{StaticResource BlueTextBoxStyle}" HorizontalAlignment="Left" Margin="13,30,0,0" TextWrapping="Wrap" Text="{Binding DpiX}" VerticalAlignment="Top" Width="120"/>
+        <TextBlock  Style="{StaticResource BlueTextBlockStyle}"  HorizontalAlignment="Left" Margin="8,9,0,0" TextWrapping="Wrap" Text="Разрешение по X " VerticalAlignment="Top"/>
+        <TextBlock Style="{StaticResource BlueTextBlockStyle}" HorizontalAlignment="Left" Margin="10,59,0,0" TextWrapping="Wrap" Text="Разрешение по Y" VerticalAlignment="Top"/>
+        <Button Style="{StaticResource BlueButtonStyle}"  Content="Сохранить" Command="{Binding SaveCommand}" HorizontalAlignment="Left" Margin="33,127,0,0" VerticalAlignment="Top" Height="33" Width="80" Cursor="Hand"/>
+        <TextBox Style="{StaticResource BlueTextBoxStyle}" HorizontalAlignment="Left" Margin="13,80,0,0" TextWrapping="Wrap" Text="{Binding DpiY}" VerticalAlignment="Top" Width="120"/>
 
 
     </Grid>

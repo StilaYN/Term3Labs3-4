@@ -5,11 +5,11 @@ namespace PhotoEditor.Commands;
 
 public class UseScaleFilter:IProgramCommand
 {
-    private ImageScaler _filter;
+    private IFilter _filter;
     private ILayer _layer;
     private IImage? _oldImage;
 
-    public UseScaleFilter(ImageScaler filter, ILayer layer)
+    public UseScaleFilter(IFilter filter, ILayer layer)
     {
         _filter = filter;
         _layer = layer;

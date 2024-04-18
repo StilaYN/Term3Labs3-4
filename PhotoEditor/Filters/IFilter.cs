@@ -8,6 +8,6 @@ namespace PhotoEditor.Filters
 {
     public interface IFilter
     {
-        public IImage ApplyFiler(IImage image);
+        public IImage ApplyFilter(IImage? image);
     }
 }

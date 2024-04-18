@@ -32,6 +32,7 @@ public class PhotoEditorMainModelView:INotifyPropertyChanged
     private Visibility _isCutVisibility;
     private Visibility _isScaleVisibility;
     public int CutFrameWidth
+
     {
         get
         {
@@ -41,6 +42,7 @@ public class PhotoEditorMainModelView:INotifyPropertyChanged
         {
             if (value > 0)
             {
+                
                 _cutFrame.ResizeFrame(value,_cutFrame.Height);
                 OnPropertyChanged("CutFrameWidth");
             }

@@ -2,7 +2,7 @@
 
 namespace PhotoEditor.Filters;
 
-public class ImageScaler
+public class ImageScaler: IFilter
 {
     public double ScaleX { get; set; }
     public double ScaleY { get; set; }

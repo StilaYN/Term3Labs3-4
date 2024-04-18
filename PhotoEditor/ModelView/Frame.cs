@@ -83,7 +83,7 @@ public class Frame:INotifyPropertyChanged
                         if (i + _posY >= 0 && j + _posX >= 0)
                         {
                             IPixel pixel = _frame.Pixels[i, j];
-                            if (pixel.Red != 0 || pixel.Green != 0 || pixel.Blue != 0 || pixel.Alpha != 0)
+                            if (pixel.Alpha != 0)
                                 result.Pixels[i + _posY, j + _posX] = _frame.Pixels[i, j];
                         }
                     }
